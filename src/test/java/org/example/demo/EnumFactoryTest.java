@@ -27,4 +27,10 @@ class EnumFactoryTest {
         Enfant enfant = personneMapping.convert("Robert");
         assertThat(enfant.getPrenom()).hasToString("Robert");
     }
+    @Test
+    void mappingEnfant2(){
+        Mapper<Enfant> personneMapping = EnumFactory.valueOf("ENFANT").getNewInstance();
+        Enfant enfant = personneMapping.convert("Robert");
+        assertThat(enfant.getPrenom()).hasToString("Robert");
+    }
 }
