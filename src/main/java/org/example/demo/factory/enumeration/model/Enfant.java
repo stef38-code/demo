@@ -1,4 +1,4 @@
-package org.example.demo.model;
+package org.example.demo.factory.enumeration.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 

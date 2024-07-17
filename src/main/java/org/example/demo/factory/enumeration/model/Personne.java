@@ -1,4 +1,4 @@
-package org.example.demo.model;
+package org.example.demo.factory.enumeration.model;
 
 public class Personne {
     private final String prenom;

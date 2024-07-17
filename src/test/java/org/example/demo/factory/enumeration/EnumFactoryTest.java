@@ -1,12 +1,10 @@
-package org.example.demo;
+package org.example.demo.factory.enumeration;
 
-import org.example.demo.mapping.MappePersonne;
-import org.example.demo.model.Enfant;
-import org.example.demo.model.Personne;
+import org.example.demo.factory.enumeration.model.Enfant;
+import org.example.demo.factory.enumeration.model.Personne;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class EnumFactoryTest {
     @Test

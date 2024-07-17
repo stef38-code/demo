@@ -1,9 +1,9 @@
-package org.example.demo;
+package org.example.demo.factory.enumeration;
 
-import org.example.demo.mapping.MappeEnfant;
-import org.example.demo.mapping.MappePersonne;
-import org.example.demo.model.Enfant;
-import org.example.demo.model.Personne;
+import org.example.demo.factory.enumeration.mapping.MappeEnfant;
+import org.example.demo.factory.enumeration.mapping.MappePersonne;
+import org.example.demo.factory.enumeration.model.Enfant;
+import org.example.demo.factory.enumeration.model.Personne;
 
 @SuppressWarnings("unchecked")
 public enum EnumFactory {
