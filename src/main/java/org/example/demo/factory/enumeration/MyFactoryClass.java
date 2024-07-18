@@ -1,16 +1,15 @@
 package org.example.demo.factory.enumeration;
-
 import org.example.demo.factory.enumeration.mapping.MappeEnfant;
 import org.example.demo.factory.enumeration.mapping.MappePersonne;
 import java.util.function.Supplier;
 
-public enum EnumFactory {
-    PERSONNE(MappePersonne::new),
-    ENFANT(MappeEnfant::new);
+public class MyFactoryClass {
+    public static final MyFactoryClass PERSONNE = new MyFactoryClass(MappePersonne::new);
+    public static final MyFactoryClass ENFANT = new MyFactoryClass(MappeEnfant::new);
 
     private final Supplier<Mapper<?>> mapperSupplier;
 
-    EnumFactory(Supplier<Mapper<?>> mapperSupplier) {
+    private MyFactoryClass(Supplier<Mapper<?>> mapperSupplier) {
         this.mapperSupplier = mapperSupplier;
     }
 
